@@ -1,0 +1,180 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{meuestilo}
+
+\begin{document}
+%\maketitle
+
+\begin{titlepage}
+	\begin{center}
+	
+	\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=7cm]{usp-logo-2.jpg}
+	\end{figure}
+
+		\Huge{Universidade de São Paulo}\\
+		\large{Faculdade de Filosofia Ciências e Letras de Ribeirão Preto}\\ 
+		\large{Departamento de Física Médica}\\ 
+		\vspace{35pt}
+        \vspace{95pt}
+        \textbf{\LARGE{Relatório (título) }}\\
+		%\title{{\large{Título}}}
+		\vspace{5,5cm}
+	\end{center}
+	
+	\begin{flushleft}
+		\begin{tabbing}
+			Aluno: Fulano de Tal da Silva - 123 456 78 \\
+			Docente: Sicrano de Tal Pereira
+	\end{tabbing}
+ \end{flushleft}
+	\vspace{1cm}
+	
+	\begin{center}
+		\vspace{\fill}
+			 \today\\
+			\end{center}
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% % % % % % % % %FOLHA DE ROSTO % % % % % % % % % %
+
+\begin{comment}
+
+\begin{titlepage}
+	\begin{center}
+	
+	%\begin{figure}[!ht]
+	%\centering
+	%\includegraphics[width=2cm]{c:/ufba.jpg}
+	%\end{figure}
+
+		\Huge{Universidade}\\
+		\large{Departamento}\\ 
+		\large{Programa}\\ 
+\vspace{15pt}
+        
+        \vspace{85pt}
+        
+		\textbf{\LARGE{Relatório}}
+		\title{\large{Título}}
+	%	\large{Modelo\\
+     %   		Validação do modelo clássico}
+			
+	\end{center}
+\vspace{1,5cm}
+	
+	\begin{flushright}
+
+   \begin{list}{}{
+      \setlength{\leftmargin}{4.5cm}
+      \setlength{\rightmargin}{0cm}
+      \setlength{\labelwidth}{0pt}
+      \setlength{\labelsep}{\leftmargin}}
+
+      \item Primeiro Relatório de Projeto de Pesquisa apresentado ao Programa XXX do Curso XXXX da Universidade XXX, como requisito parcial para .
+
+      \begin{list}{}{
+      \setlength{\leftmargin}{0cm}
+      \setlength{\rightmargin}{0cm}
+      \setlength{\labelwidth}{0pt}
+      \setlength{\labelsep}{\leftmargin}}
+
+			\item Aluno: \
+            \item Professor orientador: \
+      		\item Professor co-orientador: \
+
+      \end{list}
+   \end{list}
+\end{flushright}
+\vspace{1cm}
+\begin{center}
+		\vspace{\fill}
+		 mês\\
+		 ano
+			\end{center}
+\end{titlepage}
+\newpage
+
+\end{comment}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+\pagenumbering{arabic}
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+\section{Resumo}
+
+
+\newpage
+
+\section{Introdução}
+
+
+\newpage
+
+\section{Objetivos}
+
+
+\newpage
+
+\section{Materiais}
+
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\newpage
+
+\section{Procedimentos}
+
+\begin{enumerate}[a)]
+    \item 
+\end{enumerate}
+
+\newpage
+
+\section{Resultados}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textit{Obs: as incertezas experimentais utilizadas se encontram em \hyperlink{INCERTEZAS}{Materiais}, e as fórmulas usadas para a propagação de incertezas deste relatório se encontram no \hyperlink{PROPAGAÇÃO}{Apêndice} deste documento.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\section{Discussões}
+
+
+\newpage
+
+\addcontentsline{toc}{section}{Apêndice}
+\section*{Apêndice}
+
+\subsection*{Propagação de Incertezas}
+
+As \hypertarget{PROPAGAÇÃO}{incertezas} foram propagadas através das fórmulas:
+\begin{equation}
+    (\Delta f)^2 = \left( \frac{\partial f(x_1,\cdots,x_n)}{\partial x_1} \right)^2 \cdot (\delta_1)^2 + (\cdots) + \left( \frac{\partial f(x_1,\cdots,xn)}{\partial x_n} \right)^2 \cdot (\delta_n)^2
+    \label{propagacao}
+\end{equation}
+onde $f$ é uma função qualquer com $n$ variáveis, com erro $\delta$ para cada variável, sendo que o erro total $\delta$ de cada parâmetro é dado por:
+\begin{equation}
+    \delta = \sqrt{(\Delta f)^2 + (\delta_x)^2}
+    \label{erro}
+\end{equation}
+ onde $\delta_x$ é o desvio padrão da média quando houver.
+
+\addcontentsline{toc}{section}{Bibliografia}
+\section*{Bibliografia}
+\footnotesize{
+
+\noindent Roteiros Experimentais FFCLRP - DFM
+
+}
+
+\end{document}
+

@@ -1,0 +1,118 @@
+% ARQUIVO COM AS DEFINIÇÕES DE ESTILO ========================
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\usepackage{caption}
+\usepackage{mdframed}
+\usepackage{comment}
+
+% PACOTES DE FONTE E LINGUAGEM ===============================
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[T1]{fontenc}
+
+%\usepackage[brazilian]{babel}
+
+\usepackage[english,brazil]{babel}
+
+% PACOTES DE IMAGEM ==========================================
+
+\usepackage{graphicx}
+
+\usepackage{pdflscape,rotating}
+
+\usepackage{float,flafter,placeins}
+
+\usepackage{subfig}
+
+\usepackage[rightcaption]{sidecap}
+
+\usepackage{wrapfig}
+
+% PACOTES DE TABELA ==========================================
+
+\usepackage{booktabs,tabularx,tabulary,array,ctable}
+
+\usepackage{longtable,dcolumn,siunitx}
+
+% PACOTES DE TEXTO ===========================================
+
+\usepackage{geometry}
+
+\usepackage{setspace}
+
+\usepackage{indentfirst} % Espaçamentos dos parágrafos
+
+\usepackage{bookman}
+
+\usepackage{multicol}
+
+\usepackage{blindtext}
+
+\geometry{a4paper,left=1.7cm,bottom=2cm,right=1.7cm,top=2cm}
+
+\usepackage[shortlabels]{enumitem}
+
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+% PACOTES PARA BIBLIOGRAFIA ==================================
+
+\usepackage[sort&compress,square,comma,numbers]{natbib}
+\usepackage[fixlanguage]{babelbib}
+\usepackage{url}
+%\usepackage[hyphenbreaks]{breakurl}
+
+% PACOTES MATEMÁTICOS ========================================
+
+\usepackage{mathptmx}
+
+\usepackage{mathtools,cases,arydshln}
+
+\newtheorem{definicao}{Definição}[section]
+\newtheorem{teorema}{Teorema}[section]
+\newtheorem{corolario}{Corolário}[section]
+\newtheorem{lema}{Lema}[section]
+\newtheorem{postulado}{Postulado}[section]
+\newtheorem{exemplo}{Exemplo}[section]
+\newtheorem{observacao}{Observação}[section]
+
+% CRIAÇÃO E RENOMEAÇÃO DE COMANDOS ==========================
+
+\renewcommand{\sin}{\mathrm{sen}}
+
+% ÁREA PARA CRIAÇÃO DE COMANDOS =============================
+
+\newcommand{\baskara}[3]
+{
+\dfrac{-(#2) \pm \sqrt{(#2)^2 - 4(#1)(#3)}}{2(#1)}
+}
+
+\newcommand{\deter}[5]
+{
+\rm{det}
+\left(
+\left[
+\begin{array}{rr}
+    #1 & #2 \\
+    #3 & #4
+\end{array}
+\right]
+\right)=
+#5
+}
+%==========================================================
+
+\newenvironment{caixa}
+{
+\begin{mdframed}
+[backgroundcolor=yellow,fontcolor=blue,leftmargin=4cm,rightmargin=4cm,font=\bfseries\large,]
+}
+{
+\end{mdframed}
+}
